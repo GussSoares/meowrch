@@ -17,11 +17,11 @@
         "custom/r_end",
         "custom/l_end",
         "wlr/taskbar",
+        "custom/r_end",
+        "custom/padd",
+        "custom/l_end",
+        "custom/cava",
         "custom/r_end"
-        // "custom/padd",
-        // "custom/l_end",
-        // "custom/cava",
-        // "custom/r_end"
 	],
 	"modules-center": [
 		"group/system-info"
