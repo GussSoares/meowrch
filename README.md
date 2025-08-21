@@ -1,3 +1,10 @@
+> [!IMPORTANT]
+> THIS CONFIGURATION IS NOT A ORIGINAL REPOSITORY. THIS IS MY OWN CONFIG CUSTOMIZED.
+> THE ORIGINAL MEOWRCH THEME IS [HERE](https://github.com/meowrch/meowrch)
+
+> [!IMPORTANT]
+> THIS CONFIGURATION IS NOT A ORIGINAL REPOSITORY. THIS IS MY OWN CONFIG CUSTOMIZED.
+> THE ORIGINAL MEOWRCH THEME IS [HERE](https://github.com/meowrch/meowrch)
 
 <div align="center">
 	<img src=".meta/logo.png" width="300px">
@@ -113,7 +120,7 @@
 If you already have Linux Arch installed, then follow the steps below:
 ### 1. Clone the repository
 ```
-git clone https://github.com/meowrch/meowrch.git
+git clone https://github.com/GussSoares/meowrch.git
 ```
 ### 2. Go to the catalog with the project
 ```
