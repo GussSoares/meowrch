@@ -36,8 +36,8 @@
 		"orientation": "horizontal",
 		"modules": [
 			"custom/cpu",
-			"custom/ram",
-			"custom/gpu"
+			"custom/ram"
+			// "custom/gpu"
 		]
 	},
 	"group/system-levels": {
@@ -175,7 +175,7 @@
         "exec": "sh ~/bin/brightness.sh --status --color \"#61afef\" | cat",
         "return-type": "raw",
         "format": "{}  ",
-        "interval": 10,
+        "interval": 2,
         "rotate": 0,
         "on-scroll-up": "sh ~/bin/brightness.sh --up",
         "on-scroll-down": "sh ~/bin/brightness.sh --down",
@@ -187,7 +187,7 @@
         "exec": "sh ~/bin/volume.sh --device output --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
         "return-type": "raw",
 	    "format": "{}  ",
-        "interval": 5,
+        "interval": 2,
 	    "rotate": 0,
 	    "on-click": "sh ~/bin/volume.sh --device output --action toggle",
 	    "on-scroll-up": "sh ~/bin/volume.sh --device output --action increase",
