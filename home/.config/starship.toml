@@ -6,6 +6,7 @@ $git_branch\
 (\
     at \
     $directory\
+    $git_status\
 )\
 $fill $cmd_duration $time\
 (\
@@ -108,8 +109,19 @@ symbol = " "
 
 [git_status]
 format = '[ $all_status$ahead_behind ]($style)'
-style = "fg:text_color bg:git"
-disabled = true
+style = "fg:git_status"
+disabled = false
+### customized
+conflicted = " "               # nf-oct-git_merge
+ahead =      " ${count} "      # nf-oct-arrow_up
+behind =     " ${count} "      # nf-oct-arrow_down
+diverged =   " "               # nf-oct-git_compare
+untracked =  "?${count} "       # nf-fa-question_circle
+stashed =    "*${count} "       # nf-md-package_variant
+modified =   "!${count} "       # nf-oct-pencil
+staged =     "+${count} "       # nf-fa-plus_circle
+renamed =    " "               # nf-oct-git_rename
+deleted =    " "               # nf-fa-trash
 
 [docker_context]
 disabled=false
