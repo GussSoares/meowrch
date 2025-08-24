@@ -3,10 +3,10 @@ format = """\
 $username\
 $os\
 $git_branch\
+$git_status\
 (\
     at \
     $directory\
-    $git_status\
 )\
 $fill $cmd_duration $time\
 (\
@@ -107,21 +107,29 @@ format = "via [$symbol$branch]($style) "
 style = "bold fg:git"
 symbol = " "
 
+#[git_status]
+#format = '[ $all_status$ahead_behind ]($style)'
+#style = "fg:text_color bg:git"
+#disabled = true
+
 [git_status]
-format = '[ $all_status$ahead_behind ]($style)'
-style = "fg:git_status"
+format = '([$all_status$ahead_behind]($style) )'
+style = "fg:git"
 disabled = false
-### customized
-conflicted = " "               # nf-oct-git_merge
-ahead =      " ${count} "      # nf-oct-arrow_up
-behind =     " ${count} "      # nf-oct-arrow_down
-diverged =   " "               # nf-oct-git_compare
-untracked =  "?${count} "       # nf-fa-question_circle
-stashed =    "*${count} "       # nf-md-package_variant
-modified =   "!${count} "       # nf-oct-pencil
-staged =     "+${count} "       # nf-fa-plus_circle
-renamed =    " "               # nf-oct-git_rename
-deleted =    " "               # nf-fa-trash
+
+# Ícones Nerd Font para cada status
+stashed = " "         # Stash (nf-md-source_branch_sync)
+ahead = "${count} "    # Ahead (nf-md-arrow_up_bold)
+behind = "${count} "   # Behind (nf-md-arrow_down_bold)
+diverged = "⇅${count} "       # Diverged (nf-md-source_branch_remove + arrows)
+conflicted = "${count} "       # Conflict (nf-dev-git_merge)
+deleted = " ${count} "          # Deleted (nf-md-delete)
+modified = " ${count} "         # Modified (nf-md-file_document_edit)
+renamed = "󰑕 ${count} "          # Renamed (nf-md-file_replace_outline)
+staged = " ${count} "           # Staged (nf-fa-check_square)
+untracked = " ${count} "        # Untracked (nf-md-file_question)
+#ignored = " "          # Ignored (nf-md-eye_off)
+add = " ${count} "            # Added (nf-fa-plus_square)
 
 [docker_context]
 disabled=false
